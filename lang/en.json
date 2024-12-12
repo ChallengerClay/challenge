@@ -1,0 +1,7 @@
+{
+    "home"          : "Home",
+    "login error"   : "Your email or password is incorrect, verify your information", 
+    "logout"        : "Logout",
+    "session ended" : "Dear user, you logged out",
+    "welcome back"  : "Welcome back :email !"
+}

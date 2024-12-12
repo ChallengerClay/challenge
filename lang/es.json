@@ -1,0 +1,7 @@
+{
+    "home"          : "Inicio",
+    "login error"   : "Su correo o contraseña es incorrecta, por favor verifique e intente de nuevo", 
+    "logout"        : "Cerrar sesión",
+    "session ended" : "Estimado usuario, ha finalizado su sesión",
+    "welcome back"  : "Bienvenido de vuelta :email !"
+}
