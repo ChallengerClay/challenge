@@ -8,4 +8,8 @@ class UserRole extends Model
 {
     const COMMON_USER = 0;
     const ADMIN_USER  = 1;
+
+    protected $fillable =[
+        'name'
+    ];
 }

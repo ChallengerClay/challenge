@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Genre;
 use Illuminate\Http\Request;
+use App\Rules\Genre as RulesGenre;
 
-class ConsoleTypeController extends Controller
+
+class GenreController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $genres = Genre::all();
+        return view('admin.genre.index',compact('genres'));
     }
 
     /**
@@ -19,7 +23,7 @@ class ConsoleTypeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.genre.create');
     }
 
     /**
@@ -27,7 +31,12 @@ class ConsoleTypeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate(Genre::rules());
+        Genre::create([
+            'name' => ucfirst($request->name)
+        ]);
+
+        return redirect(route('genre.index'))->with('success',__('successfully created'));
     }
 
     /**

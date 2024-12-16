@@ -1,7 +1,13 @@
 {
+    "email"         : "Correo",
     "home"          : "Inicio",
+    "invalid genre" : "No puede incluir esta palabra en la lista",
+    "login"         : "Iniciar sesión",
     "login error"   : "Su correo o contraseña es incorrecta, por favor verifique e intente de nuevo", 
     "logout"        : "Cerrar sesión",
+    "name"          : "Nombre",
+    "password"      : "Contraseña",
     "session ended" : "Estimado usuario, ha finalizado su sesión",
+    "successfully created" : "Creado exitosamente",
     "welcome back"  : "Bienvenido de vuelta :email !"
 }

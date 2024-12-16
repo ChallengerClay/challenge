@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ConsoleTypeController extends Controller
+class ConsoleController extends Controller
 {
     /**
      * Display a listing of the resource.

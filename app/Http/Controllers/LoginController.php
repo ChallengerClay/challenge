@@ -37,6 +37,6 @@ class LoginController extends Controller
 
     public function getLogout(){
         Auth::logout();
-        return redirect('/login')->with('alert',__('session ended'));
+        return redirect(route('login'))->with('alert',__('session ended'));
     }
 }

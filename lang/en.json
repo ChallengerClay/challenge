@@ -1,7 +1,14 @@
 {
+    "actions"       : "Actions",
+    "api practice"  : "API practice",
+    "create"        : "Create",
+    "create new"    : "Create new",
     "home"          : "Home",
+    "invalid genre" : "You can't include this word to the list",
     "login error"   : "Your email or password is incorrect, verify your information", 
     "logout"        : "Logout",
+    "name"          : "Name",
     "session ended" : "Dear user, you logged out",
+    "successfully created" : "Successfully created",
     "welcome back"  : "Welcome back :email !"
 }

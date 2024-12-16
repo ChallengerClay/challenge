@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('game_release_date', function (Blueprint $table) {
+        Schema::create('game_genre', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId('game_id')->constrained();
+            $table->foreignId('genre_id')->constrained();
         });
     }
 
@@ -22,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('game_release_date');
+        Schema::dropIfExists('game_genre');
     }
 };
